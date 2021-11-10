@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 # practice algorithm with java
+=======
+## algorithm-
+>>>>>>> d4acae4725c4316a85a04df3378b6db45f810c1b
 
 1.mergeSort
 <br>
 2.bobbleSort
+<<<<<<< HEAD
 
 # to learn
 
@@ -16,3 +21,7 @@
 8. Heaps
 9.  DP
 10. Sorting Algorithms (Quick & Merge)
+=======
+<br>
+practice algorithm with java
+>>>>>>> d4acae4725c4316a85a04df3378b6db45f810c1b
