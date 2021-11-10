@@ -19,29 +19,29 @@ public class bubbleSort{
         print(numbers);
     }
 
-    private static void print(int[] input) {
-        for(int i = 0 ; i < input.length ; i++){
-            System.out.println(input[i]);
+    private static void print(int[] numbers) {
+        for(int i = 0 ; i < numbers.length ; i++){
+            System.out.println(numbers[i]);
         }
     }
 
-    private static int[] sort(int[] input){
+    private static int[] sort(int[] numbers){
         boolean hasSwapped = true;
 
         while(hasSwapped){
             hasSwapped = false;
 
-            for(int i = 0 ; i < input.length - 1 ; i++){
-                if(input[i] > input[i+1]){
+            for(int i = 0 ; i < numbers.length - 1 ; i++){
+                if(numbers[i] > numbers[i+1]){
                     hasSwapped = true;
-                    int temp = input[i];
-                    input[i] = input[i+1];
-                    input[i+1] = temp;
+                    int temp = numbers[i];
+                    numbers[i] = numbers[i+1];
+                    numbers[i+1] = temp;
                 }
             }
 
         }
-        return input;
+        return numbers;
 
     }
 }

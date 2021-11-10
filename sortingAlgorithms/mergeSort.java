@@ -13,20 +13,20 @@ public class mergeSort{
         System.out.println("Before:");
         print(numbers);
 
-        MergeSort(numbers);
+        sort(numbers);
 
         System.out.println("After:");
         print(numbers);
     }
 
-    private static void print(int[] input) {
+    private static void print(int[] numbers) {
         for(int i = 0 ; i < 100 ; i++){
-            System.out.println(input[i]);
+            System.out.println(numbers[i]);
         }
     }
 
-    private static void MergeSort(int[] input){
-        int inputLength = input.length;
+    private static void sort(int[] numbers){
+        int inputLength = numbers.length;
 
         if(inputLength<2) return;
         
@@ -35,20 +35,20 @@ public class mergeSort{
         int[] right = new int[inputLength-midIndex];
 
         for(int i = 0 ; i < midIndex; i++){
-            left[i] = input[i];
+            left[i] = numbers[i];
         }
 
         for(int i = midIndex; i < inputLength; i ++){
-            right[i-midIndex] = input[i];
+            right[i-midIndex] = numbers[i];
         }
 
-        MergeSort(left);
-        MergeSort(right);
+        sort(left);
+        sort(right);
 
-        merge(input, left, right);
+        merge(numbers, left, right);
     }
 
-    private static void merge(int[] input, int[] left, int[] right){
+    private static void merge(int[] numbers, int[] left, int[] right){
         int leftSize = left.length;
         int rightSize = right.length;
 
@@ -56,23 +56,23 @@ public class mergeSort{
 
         while(i<leftSize && j<rightSize){
             if(left[i] <= right[j]){
-                input[k] = left[i];
+                numbers[k] = left[i];
                 i++;
             }else{
-                input[k] = right[j];
+                numbers[k] = right[j];
                 j++;
             }
             k++;
         }
 
         while(i < leftSize){
-            input[k] = left[i];
+            numbers[k] = left[i];
             i++;
             k++;
         }
 
         while(j < rightSize){
-            input[k] = right[j];
+            numbers[k] = right[j];
             j++;
             k++;
         }
