@@ -17,4 +17,3 @@ mergeSort, bobbleSort, binary serach
 8. Heaps
 9.  DP
 10. Sorting Algorithms (Quick & Merge)
->>>>>>> d4acae4725c4316a85a04df3378b6db45f810c1b
