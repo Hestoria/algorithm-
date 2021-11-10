@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 # practice algorithm with java
-=======
 
 mergeSort, bobbleSort, binary serach
-
 
 # to learn
 
@@ -16,4 +13,4 @@ mergeSort, bobbleSort, binary serach
 7. Suffix Trees
 8. Heaps
 9.  DP
-10. Sorting Algorithms (Quick & Merge)
+10. Sorting Algorithms (Quick & <del>Merge</del>)
