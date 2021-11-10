@@ -1,6 +1,7 @@
-# algorithm-
+## algorithm-
 
 1.mergeSort
+<br>
 2.bobbleSort
-
-# practice algorithm with java
+<br>
+practice algorithm with java
